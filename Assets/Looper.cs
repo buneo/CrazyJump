@@ -15,6 +15,7 @@ public class BGLooper : MonoBehaviour {
 			Vector3 pos = pipe.transform.position;
 			pos.y = Random.Range(pipeMin, pipeMax);
 			pipe.transform.position = pos;
+			//du ma bon cho
 		}
 	}
 	
