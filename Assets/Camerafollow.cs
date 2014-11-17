@@ -15,4 +15,8 @@ public class Camerafollow : MonoBehaviour {
 		playerpos.y = transform.position.y;
 		transform.position = playerpos;
 	}
+	void OnGUI()
+	{
+
+	}
 }

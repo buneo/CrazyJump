@@ -7,7 +7,7 @@ public class FrogJumping : MonoBehaviour {
 	public Vector3 jumpVel; 
 	public Vector3 gravity;
 	public float speed = 2500;
-	public float forwardSpeed = 50;
+	public float forwardSpeed = 200;
 	bool didJump = false;
 	// Use this for initialization
 	void Start () {
@@ -28,9 +28,9 @@ public class FrogJumping : MonoBehaviour {
 	{
 		if (didJump) {
 			rigidbody2D.AddForce(Vector2.right*forwardSpeed);
-			rigidbody2D.AddForce(Vector2.up*forwardSpeed);
+			rigidbody2D.AddForce(Vector2.up*forwardSpeed*2);
 			didJump = false;
-			forwardSpeed =50;
+			forwardSpeed =60;
 				}
 		}
 }
